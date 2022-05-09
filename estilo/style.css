@@ -1,101 +1,65 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
-
-/* Configuraçoes Globais */
 
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
 }
 
 :root {
-    --cor01: #B2C1ED;
-    --cor02: #8C97BA;
-    --cor03: #6C8DF0;
-    --cor04: #52596E;
-    --cor05: #384670;
-
-    --fonte-padrao: 'Plus Jakarta Sans', sans-serif;
+    --color-midblue: #5353BD;
+    --color-darkblue: #313170;
+    --color-extradarkblue: #1C1C40;
+    --color-lightgray: #9F9FBF;
+    --color-gray: #66668A;
 }
 
-body, html {
-    font-family: var(--fonte-padrao);
-    line-height: 1.5em;
-    background-color: var(--cor01);
-    font-size: 1.2em;
-    font-weight: 400;
-    color: var(--cor05);
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+
+    background-color: lightblue;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 25px;
+    width: 100%;
 }
 
-h2 {
-    color: black;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+.logo {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: dodgerblue;
 }
 
-img {
-    max-width: 30px;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+nav ul li > a {
+    color: white;
+    padding: 5px;
 }
 
 /* Main */
-
-main{
-    
-    max-width: 1200px;
-
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* Section Sobre */
-
-#sobre {
-    padding-top: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
-}
-
-#sobre > img {
-    max-width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-#sobre p {
-    margin-bottom: 30px;
-}
-
-/* Section Porti */
-
-#porti {
-    margin-bottom: 50px;
-    margin-top: 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
-}
-
-#porti h2, p {
-    margin-bottom: 20px;
-}
-
-#porti ul {
-    margin-bottom: 50px;
-}
-
-#porti ul li a {
-    color:  var(--cor04);
-}
-
-#porti ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Contato */
-
-#contato h2 {
-    margin-bottom: 30px;
-}
-
-#contato > #imgs > a {
-    padding: 10px;
 }
