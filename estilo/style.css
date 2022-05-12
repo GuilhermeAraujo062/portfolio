@@ -171,7 +171,7 @@ nav ul li > a:hover {
 
 .thumb-projetos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 80px;
 }
@@ -233,6 +233,13 @@ nav ul li > a:hover {
 
 .habilidades > div img {
     max-width: 200px;
+    border-radius: 30px;
+}
+
+.habilidades > div img:hover {
+    cursor: pointer;
+    transition: .5s;
+    background-color: white;
 }
 
 /* Footer */
@@ -244,7 +251,11 @@ footer {
     text-align: center;
 }
 
-footer > a:hover {
+.creditos > a {
+    color: var(--color-04);
+}
+
+.creditos > a:hover {
     text-decoration: underline;
 }
 
