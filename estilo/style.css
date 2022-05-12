@@ -123,12 +123,11 @@ nav ul li > a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
 
     height: 98vh;
     background-color: var(--color-05);
-    
 }
 
 .descricao {
@@ -137,6 +136,7 @@ nav ul li > a:hover {
     font-size: 1.2em;
     color: var(--color-white);
     width: 600px;
+    margin-right: 10px;
 }
 
 .descricao > h2 {
@@ -168,6 +168,7 @@ nav ul li > a:hover {
     margin: 100px 0px;
 }
 
+
 .thumb-projetos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -188,7 +189,7 @@ nav ul li > a:hover {
 }
 
 .thumb-projetos > div p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .thumb-projetos > div .span {
@@ -247,5 +248,21 @@ footer > a:hover {
     text-decoration: underline;
 }
 
+/* Animação */
+/* [data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
 
+[data-anime="left"] {
+    transform: translate3d(-200px, 0px, 0px);
+}
 
+[data-anime="right"] {
+    transform: translate3d(200px, 0px, 0px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+} */
