@@ -64,7 +64,7 @@ nav ul {
 /* Projetos */
 .projetos {
     height: 98vh;
-    padding-bottom: 1100px;
+    padding-bottom: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,8 +81,8 @@ nav ul {
 
 /* Habilidades */
 .habilidades {
-    height: 98vh;
-    padding-bottom: 200px;
+    height: 100vh;
+    padding-bottom: 250px;
     background-color: var(--color-05);
     color: var(--color-white);
     display: flex;
@@ -96,6 +96,25 @@ nav ul {
     flex-direction: column;
     gap: 40px;
     align-items: center;
+}
+
+/* Animação */
+[data-anime] {
+    opacity: 1;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime="right"] {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 }

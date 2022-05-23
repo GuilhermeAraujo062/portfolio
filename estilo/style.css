@@ -46,6 +46,7 @@ header {
     background-color: var(--color-02);
     border-bottom: 1px solid var(--color-03);
     padding: 25px;
+    z-index: 1;
 }
 
 .logo {
@@ -236,12 +237,6 @@ nav ul li > a:hover {
     border-radius: 30px;
 }
 
-.habilidades > div img:hover {
-    cursor: pointer;
-    transition: .5s;
-    background-color: white;
-}
-
 /* Footer */
 footer {
     background-color: var(--color-01);
@@ -260,7 +255,7 @@ footer {
 }
 
 /* Animação */
-/* [data-anime] {
+[data-anime] {
     opacity: 0;
     transition: .3s;
 }
@@ -276,4 +271,4 @@ footer {
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
-} */
+}
