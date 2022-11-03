@@ -1,0 +1,121 @@
+@media (max-width: 933px) {
+
+.logo {
+   display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+/* Inicio */
+    .inicio > div > img {
+    display: none;
+}
+
+.titulo {
+    padding-top: 40%;
+}
+
+.inicio {
+    display: block;
+    text-align: center;
+
+    background-color: var(--color-01);
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botao > a {
+    font-weight: 400;
+    text-transform: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-right: 0;
+    border: 2px var(--color-04) solid;
+}
+
+/* Sobre */
+.sobre > img {
+    display: none;
+}
+
+.descricao {
+    text-align: center;
+    text-indent: 1.2em;
+    font-size: 1.2em;
+    color: var(--color-white);
+    width: 600px;
+    margin-right: 10px;
+}
+/* Projetos */
+.projetos {
+    height: 98vh;
+    padding-bottom: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-02);
+    color: var(--color-white);
+}
+
+.thumb-projetos {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 80px;
+    gap: 45px;
+}
+
+/* Habilidades */
+.habilidades {
+    height: 100vh;
+    padding-bottom: 250px;
+    background-color: var(--color-05);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habilidades > div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Animação */
+[data-anime] {
+    opacity: 1;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime="right"] {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+}
+
