@@ -27,6 +27,8 @@ html, body {
     width: 100vw;
 }
 
+/* Header */
+
 header {
     display: flex;
     flex-direction: column;
@@ -75,4 +77,89 @@ nav ul > li a {
 nav ul > li a:hover {
     background-color: var(--light-gray);
     color: var(--blue);
+}
+
+/* Main */
+
+/* Inicio */
+
+section.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--black);
+}
+
+div.titulo > h1 {
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--white);
+}
+
+div.titulo > h1 > span.nome {
+    color: var(--blue);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+div.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+div.botao > a {
+    color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+div.botao > a:hover {
+    background-color: var(--light-black);
+    color: var(--blue);
+}
+
+section.inicio > div > img {
+    display: none;
+}
+
+/* Sobre */
+
+section.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+section.sobre > div.descricao {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 80%;
+    text-align: center;
+}
+
+section.sobre > div.descricao > h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+section.sobre > img {
+    display: none;
 }
