@@ -172,12 +172,6 @@ section.sobre > img {
     display: none;
 }
 
-.thumb-projetos > div > p a {
-    font-weight: bold;
-    color: white;
-    text-decoration: underline;
-}
-
 .thumb-projetos > div > p a:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.699);
