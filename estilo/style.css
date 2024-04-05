@@ -52,7 +52,7 @@ header {
     cursor: default;
 }
 
-span#burguer {
+#burguer {
     display: block;
     font-size: 2em;
     padding: 10px;
@@ -60,7 +60,7 @@ span#burguer {
     cursor: pointer;
 }
 
-span#burguer:hover {
+#burguer:hover {
     background-color: var(--light-gray);
     color: var(--blue);
 }
@@ -91,7 +91,7 @@ nav ul > li a:hover {
 
 /* Inicio */
 
-section.inicio {
+.inicio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -101,7 +101,7 @@ section.inicio {
     background-color: var(--black);
 }
 
-div.titulo > h1 {
+.titulo > h1 {
     text-align: center;
     font-family: var(--font-titulo);
     font-size: 2em;
@@ -109,13 +109,13 @@ div.titulo > h1 {
     color: var(--white);
 }
 
-div.titulo > h1 > span.nome {
+.titulo > h1 > span.nome {
     color: var(--blue);
     font-size: 1.5em;
     font-weight: 400;
 }
 
-div.botao {
+.botao {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -124,7 +124,7 @@ div.botao {
     margin-top: 30px;
 }
 
-div.botao > a {
+.botao > a {
     color: var(--white);
     border: 2px solid var(--blue);
     border-radius: 10px;
@@ -132,18 +132,18 @@ div.botao > a {
     text-transform: uppercase;
 }
 
-div.botao > a:hover {
+.botao > a:hover {
     background-color: var(--light-black);
     color: var(--blue);
 }
 
-section.inicio > div > img {
+.inicio > div > img {
     display: none;
 }
 
 /* Sobre */
 
-section.sobre {
+.sobre {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -154,7 +154,7 @@ section.sobre {
     color: var(--white);
 }
 
-section.sobre > div.descricao {
+.sobre > div.descricao {
     font-weight: 400;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -162,13 +162,13 @@ section.sobre > div.descricao {
     text-align: center;
 }
 
-section.sobre > div.descricao > h2 {
+.sobre > div.descricao > h2 {
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 40px;
 }
 
-section.sobre > img {
+.sobre > img {
     display: none;
 }
 
@@ -179,7 +179,7 @@ section.sobre > img {
 
 /* Projetos */
 
-section.projetos {
+.projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,48 +189,53 @@ section.projetos {
     color: var(--white);
 }
 
-section.projetos > h2 {
+.projetos > h2 {
     font-size: 2em;
     padding: 20px;
     margin-bottom: 40px;
 }
 
-div.thumb-projetos {
+.thumb-projetos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 80px;
 }
 
-div.thumb-projetos > div {
+.thumb-projetos > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-div.thumb-projetos > div > img {
+.thumb-projetos > div > img {
     width: 100%;
     height: 200px;
     border-left: 5px solid var(--blue);
     border-radius: 2px;
 }
 
-a.btn-visualizar {
+.btn-visualizar {
     padding: 10px 40px;
     border: 2px solid var(--blue);
     border-radius: 10px;
     color: var(--white);
 }
 
-a.btn-visualizar:hover {
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-visualizar:hover {
     background-color: var(--gray);
     color: var(--blue);
 }
 
 /* Habilidades */
 
-section.habilidades {
+.habilidades {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,17 +245,17 @@ section.habilidades {
     padding: 50px;
 }
 
-section.habilidades > h2 {
+.habilidades > h2 {
     font-size: 2em;
 }
 
-section.habilidades > div {
+.habilidades > div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section.habilidades > div > img {
+.habilidades > div > img {
     width: 100px;
 }
 
@@ -267,6 +272,6 @@ footer {
     font-size: 1.2em;
 }
 
-div.creditos > a {
+.creditos > a {
     color: var(--blue);
 }
